@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="baseUrl" value="https://webapp-playground-leadqa.menu.app"/>
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="MenuTest(failed)" parallel="tests">
+    <classes>
+      <class name="menuApp.tests.suites.MenuSuite">
+        <parameter name="item" value="Margarita"/>
+        <parameter name="quantity" value="3"/>
+        <parameter name="specialInstructions" value=""/>
+        <parameter name="price" value="24.0"/>
+        <parameter name="cityLocation" value="Novi Sad, Srbija"/>
+        <parameter name="location" value="Petricevic One"/>
+        <parameter name="locationNumber" value="2"/>
+        <parameter name="day" value="Sunday"/>
+        <parameter name="workingHours" value="8:00 AM - 8:00 PM"/>
+        <methods>
+          <include name="verifyCanItemsBeAddedToCart"/>
+          <include name="verifyWorkingHours"/>
+          <include name="afterClass"/>
+          <include name="verifyNumberOfLocations"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- menuApp.tests.suites.MenuSuite -->
+    </classes>
+  </test> <!-- MenuTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

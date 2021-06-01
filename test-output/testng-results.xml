@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16932" started-at="2021-06-01T13:37:44 CEST" finished-at="2021-06-01T13:38:01 CEST">
+    <groups>
+    </groups>
+    <test name="MenuTest" duration-ms="16932" started-at="2021-06-01T13:37:44 CEST" finished-at="2021-06-01T13:38:01 CEST">
+      <class name="menuApp.tests.suites.MenuSuite">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:menuApp.tests.suites.MenuSuite@3d99d22e]" name="beforeClass" is-config="true" duration-ms="2732" started-at="2021-06-01T13:37:44 CEST" finished-at="2021-06-01T13:37:47 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="verifyNumberOfLocations(java.lang.String, java.lang.String, int, org.testng.ITestContext)[pri:0, instance:menuApp.tests.suites.MenuSuite@3d99d22e]" name="verifyNumberOfLocations" duration-ms="6796" started-at="2021-06-01T13:37:47 CEST" finished-at="2021-06-01T13:37:54 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://webapp-playground-leadqa.menu.app]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Novi Sad, Srbija]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@dc6a26f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfLocations -->
+        <test-method status="PASS" signature="verifyWorkingHours(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:menuApp.tests.suites.MenuSuite@3d99d22e]" name="verifyWorkingHours" duration-ms="3760" started-at="2021-06-01T13:37:54 CEST" depends-on-methods="menuApp.tests.suites.MenuSuite.verifyNumberOfLocations" finished-at="2021-06-01T13:37:58 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Petricevic One]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sunday]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8:00 AM - 8:00 PM]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@dc6a26f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingHours -->
+        <test-method status="PASS" signature="verifyCanItemsBeAddedToCart(java.lang.String, int, java.lang.String, double, org.testng.ITestContext)[pri:0, instance:menuApp.tests.suites.MenuSuite@3d99d22e]" name="verifyCanItemsBeAddedToCart" duration-ms="3338" started-at="2021-06-01T13:37:58 CEST" depends-on-methods="menuApp.tests.suites.MenuSuite.verifyWorkingHours" finished-at="2021-06-01T13:38:01 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Margarita]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[24.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@dc6a26f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCanItemsBeAddedToCart -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:menuApp.tests.suites.MenuSuite@3d99d22e]" name="afterClass" is-config="true" duration-ms="250" started-at="2021-06-01T13:38:01 CEST" finished-at="2021-06-01T13:38:01 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- menuApp.tests.suites.MenuSuite -->
+    </test> <!-- MenuTest -->
+  </suite> <!-- Suite -->
+</testng-results>
